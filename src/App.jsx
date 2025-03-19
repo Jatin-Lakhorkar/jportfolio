@@ -12,7 +12,7 @@ function App() {
       >
         {/* Navbar */}
         <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 dark:bg-gray-900/30 shadow-md z-50 py-6 px-6 flex justify-between items-center">
-          <h1 className="text-2xl font-bold italic text-amber-300">lj.</h1>
+          <h1 className="text-2xl font-bold italic text-amber-700">lj.</h1>
           <nav>
             <ul className="flex space-x-6">
               <li>
