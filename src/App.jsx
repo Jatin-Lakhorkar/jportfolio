@@ -12,27 +12,27 @@ function App() {
       >
         {/* Navbar */}
         <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 dark:bg-gray-900/30 shadow-md z-50 py-6 px-6 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Jatin's Portfolio</h1>
+          <h1 className="text-2xl font-bold italic text-amber-300">lj.</h1>
           <nav>
             <ul className="flex space-x-6">
+              <li>
+                <a href="#home" className="hover:text-blue-950">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="hover:text-blue-950">
+                  About
+                </a>
+              </li>
               <li>
                 <a href="#projects" className="hover:text-blue-950">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#skills" className="hover:text-blue-950">
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a href="#education" className="hover:text-blue-950">
-                  Education
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-blue-950">
-                  Contact
+                <a href="#resume" className="hover:text-blue-950">
+                  Resume
                 </a>
               </li>
             </ul>
@@ -56,44 +56,23 @@ function App() {
 
         {/* Hero Section */}
         <section
+          id="home"
           className={`h-80 text-center  ${
             darkMode ? "bg-sky-500 text-white" : "bg-sky-400 text-black"
           } transition-all duration-300`}
         >
           <h2 className=" pt-30 text-4xl font-bold">👋 Hi, There</h2>
-          <p className="mt-4 text-lg">
-            I am Jatin, a passionate developer 💻 who loves to build impactful
-            projects 🌍 to help society. Language is not a barrier for me 🚀, I
-            can code in any language after learning 📚. I am a quick learner ⚡
-            and problem solver 🧩. Loves to work in a team 🤝 and learn from
-            others 🔍.
+          <p className="mt-10 ml-20 mr-20  text-lg">
+            I am Jatin Lakhorkar, a passionate developer 💻 who loves to build
+            impactful projects 🌍 to help society. Language is not a barrier for
+            me 🚀, I can code in any language after learning 📚. I am a quick
+            learner ⚡ and problem solver 🧩. Loves to work in a team 🤝 and
+            learn from others 🔍.
           </p>
         </section>
-
-        {/* Projects Section */}
-        <section id="projects" className="container mx-auto px-6 mt-10">
-          <h2 className="text-3xl font-semibold text-center">Projects</h2>
-          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="p-4 border rounded-lg shadow-md">
-              <h3 className="text-xl font-bold">Weather App</h3>
-              <p>
-                A simple weather app using Java, REST API, and weather APIs.
-              </p>
-            </div>
-            <div className="p-4 border rounded-lg shadow-md ">
-              <h3 className="text-xl font-bold">Movie Recommendation App</h3>
-              <p>Built with MERN stack using the TMDB API.</p>
-            </div>
-            <div className="p-4 border rounded-lg shadow-md">
-              <h3 className="text-xl font-bold">Calculator</h3>
-              <p>A simple Calculator app built using HTML CSS and JS</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Skills Section */}
-        <section id="skills" className="container mx-auto px-6 mt-10">
-          <h2 className="text-3xl font-semibold text-center">Skills</h2>
+        {/* About Section */}
+        <section id="about" className=" container mx-auto px-6 mt-10">
+          <h2 className="text-3xl font-semibold text-center">About Me</h2>
           <div className="gap-3 mt-6 grid-cols-3 flex justify-center items-center flex-wrap">
             <div className="w-20 h-25 border rounded-full shadow-lg flex items-center justify-center">
               <img
@@ -145,80 +124,73 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* Education Section */}
-        <section
-          id="education"
-          className="container mx-auto px-6 mt-10 text-center"
-        >
-          <h2 className="text-3xl font-semibold">Education</h2>
-          <p className="mt-4">Computer Engineering Graduate (Class of 2023)</p>
-        </section>
-
-        {/* Contact Section */}
-        <section
-          id="contact"
-          className="container mx-auto px-6 mt-10 text-center"
-        >
-          <h2 className="text-3xl font-semibold">Contact</h2>
-          <div className="gap-3 mt-6 grid-cols-3 flex justify-center items-center flex-wrap">
-            <div className="w-15 h-15 border rounded-full shadow-lg flex items-center justify-center">
-              <a
-                href="
-              https://www.linkedin.com/in/jatin-lakhorkar/
-              "
-                target="_blank"
-                onclick="window.open(this.href,'_blank'); return false;"
-              >
-                <img
-                  src="https://img.icons8.com/color/48/000000/linkedin.png"
-                  alt="LinkedIn"
-                />
-              </a>
+        {/* Projects Section */}
+        <section id="projects" className=" container mx-auto px-6 mt-3">
+          <h2 className="text-3xl font-semibold text-center">Projects</h2>
+          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="p-4 border rounded-lg shadow-md">
+              <h3 className="text-xl font-bold">Weather App</h3>
+              <p>
+                A simple weather app using Java, REST API, and weather APIs.
+              </p>
             </div>
-            <div className="w-15 h-15 border rounded-full shadow-lg flex items-center justify-center">
-              <a
-                href="https://github.com/Jatin-Lakhorkar"
-                target="_blank"
-                onclick="window.open(this.href,'_blank'); return false;"
-              >
-                <img
-                  src="https://img.icons8.com/color/48/000000/github--v1.png"
-                  alt="GitHub"
-                />
-              </a>
+            <div className="p-4 border rounded-lg shadow-md ">
+              <h3 className="text-xl font-bold">Movie Recommendation App</h3>
+              <p>Built with MERN stack using the TMDB API.</p>
             </div>
-
-            <div className="w-15 h-15 border rounded-full shadow-lg flex items-center justify-center">
-              <a
-                href="mailto:jatinlakhorkar@gmail.com"
-                target="_blank"
-                onclick="window.open(this.href,'_blank'); return false;"
-              >
-                <img
-                  src="https://img.icons8.com/color/48/000000/gmail.png"
-                  alt="Gmail"
-                />
-              </a>
-            </div>
-            <div className="w-15 h-15 border rounded-full shadow-lg flex items-center justify-center">
-              <a
-                href="https://twitter.com/JatinLakhorkar1"
-                target="_blank"
-                onclick="window.open(this.href,'_blank'); return false;"
-              >
-                <img
-                  src="https://img.icons8.com/color/48/000000/twitter--v1.png"
-                  alt="Twitter"
-                />
-              </a>
+            <div className="p-4 border rounded-lg shadow-md">
+              <h3 className="text-xl font-bold">Calculator</h3>
+              <p>A simple Calculator app built using HTML CSS and JS</p>
             </div>
           </div>
         </section>
 
+        {/* Education Section */}
+        <section
+          id="resume"
+          className="container mx-auto px-6 mt-10 text-center"
+        >
+          <h2 className="text-3xl font-semibold">Resume</h2>
+          <p className="mt-4">hore</p>
+        </section>
+
         {/* Footer */}
-        <footer className="text-center py-6 mt-10 bg-gray-800 text-white">
-          <p>&copy; 2025 All Rights Reserved.</p>
+        <footer className="flex justify-between items-center py-6 mt-10 bg-gray-800 text-white px-6">
+          <div className="text-left">Made with ❤️ by Jatin</div>
+          <div className="text-center">&copy; 2025 All Rights Reserved.</div>
+          <div className="flex space-x-4">
+            <a
+              href="https://www.linkedin.com/in/jatin-lakhorkar/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.icons8.com/color/24/000000/linkedin.png"
+                alt="LinkedIn"
+              />
+            </a>
+            <a
+              href="https://github.com/Jatin-Lakhorkar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                alt="GitHub"
+                className="w-6 h-6"
+              />
+            </a>
+            <a
+              href="https://twitter.com/JatinLakhorkar1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://img.icons8.com/color/24/000000/twitter--v1.png"
+                alt="Twitter"
+              />
+            </a>
+          </div>
         </footer>
       </div>
     </>
