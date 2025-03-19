@@ -155,7 +155,7 @@ function App() {
         </section>
 
         {/* Footer */}
-        <footer className="flex justify-between items-center py-6 mt-10 bg-gray-800 text-white px-6">
+        <footer className="flex justify-between items-center py-6 mt-10 bg-sky-800 text-white px-6 ">
           <div className="text-left">Made with ❤️ by Jatin</div>
           <div className="text-center">&copy; 2025 All Rights Reserved.</div>
           <div className="flex space-x-4">
