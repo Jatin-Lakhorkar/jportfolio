@@ -11,7 +11,7 @@ function App() {
         } transition-all duration-300`}
       >
         {/* Navbar */}
-        <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 dark:bg-gray-900/30 shadow-md z-50 py-6 px-6 flex justify-between items-center">
+        <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 dark:bg-gray-900/30 shadow-[0px_0px_10px_theme(colors.emerald.400)] z-50 py-6 px-6 flex justify-between items-center">
           <h1 className="text-2xl font-bold italic text-amber-700">lj.</h1>
           <nav>
             <ul className="flex space-x-6">
@@ -44,7 +44,7 @@ function App() {
           >
             {/* Switch Thumb */}
             <span
-              className={`w-6 h-6 bg-white rounded-full shadow-md transform transition-all duration-300 ${
+              className={`w-6 h-6 bg-white rounded-full shadow-[0px_0px_10px_theme(colors.emerald.400)] transform transition-all duration-300 ${
                 darkMode ? "translate-x-8" : "translate-x-0"
               }`}
             ></span>
@@ -74,49 +74,49 @@ function App() {
         <section id="about" className=" container mx-auto px-6 mt-10">
           <h2 className="text-3xl font-semibold text-center">About Me</h2>
           <div className="gap-3 mt-6 grid-cols-3 flex justify-center items-center flex-wrap">
-            <div className="w-20 h-25 border rounded-full shadow-lg flex items-center justify-center">
+            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
               <img
                 src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
                 alt="Java"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-lg flex items-center justify-center">
+            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
               <img
                 src="https://img.icons8.com/color/48/000000/html-5--v1.png"
                 alt="HTML"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-lg flex items-center justify-center">
+            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
               <img
                 src="https://img.icons8.com/color/48/000000/css3.png"
                 alt="CSS"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-lg flex items-center justify-center">
+            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
               <img
                 src="https://img.icons8.com/color/48/000000/javascript--v1.png"
                 alt="JavaScript"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-lg flex items-center justify-center">
+            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
               <img
                 src="https://img.icons8.com/color/48/000000/mongodb.png"
                 alt="MongoDB"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-lg flex items-center justify-center">
+            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
               <img
                 src="https://img.icons8.com/?size=100&id=SDVmtZ6VBGXt&format=png&color=000000"
                 alt="Express"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-lg flex items-center justify-center">
+            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
               <img
                 src="https://img.icons8.com/color/48/000000/react-native.png"
                 alt="React"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-lg flex items-center justify-center">
+            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
               <img
                 src="https://img.icons8.com/color/48/000000/nodejs.png"
                 alt="Node"
@@ -128,17 +128,17 @@ function App() {
         <section id="projects" className=" container mx-auto px-6 mt-3">
           <h2 className="text-3xl font-semibold text-center">Projects</h2>
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="p-4 border rounded-lg shadow-md">
+            <div className="p-4 border rounded-lg shadow-[0px_0px_10px_theme(colors.emerald.400)]">
               <h3 className="text-xl font-bold">Weather App</h3>
               <p>
                 A simple weather app using Java, REST API, and weather APIs.
               </p>
             </div>
-            <div className="p-4 border rounded-lg shadow-md ">
+            <div className="p-4 border rounded-lg shadow-[0px_0px_10px_theme(colors.emerald.400)] ">
               <h3 className="text-xl font-bold">Movie Recommendation App</h3>
               <p>Built with MERN stack using the TMDB API.</p>
             </div>
-            <div className="p-4 border rounded-lg shadow-md">
+            <div className="p-4 border rounded-lg shadow-[0px_0px_10px_theme(colors.emerald.400)]">
               <h3 className="text-xl font-bold">Calculator</h3>
               <p>A simple Calculator app built using HTML CSS and JS</p>
             </div>
