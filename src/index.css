@@ -34,3 +34,7 @@
 .badge {
     @apply w-20 h-25 border rounded-full shadow-[0px_0px_10px] shadow-sky-400 flex items-center justify-center;
 }
+
+.project {
+    @apply p-4 border rounded-lg border-sky-400;
+}
