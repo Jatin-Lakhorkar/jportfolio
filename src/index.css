@@ -30,3 +30,7 @@
         transform: rotate(0deg);
     }
 }
+
+.badge {
+    @apply w-20 h-25 border rounded-full shadow-[0px_0px_10px] shadow-sky-400 flex items-center justify-center;
+}
