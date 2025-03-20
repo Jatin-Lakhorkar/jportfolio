@@ -11,7 +11,7 @@ function App() {
         } transition-all duration-300`}
       >
         {/* Navbar */}
-        <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 dark:bg-gray-900/30 shadow-[0px_0px_10px_theme(colors.emerald.400)] z-50 py-6 px-6 flex justify-between items-center">
+        <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 dark:bg-gray-900/30 z-50 py-6 px-6 flex justify-between items-center">
           <h1 className="text-2xl font-bold italic text-amber-700">lj.</h1>
           <nav>
             <ul className="flex space-x-6">
@@ -44,7 +44,7 @@ function App() {
           >
             {/* Switch Thumb */}
             <span
-              className={`w-6 h-6 bg-white rounded-full shadow-[0px_0px_10px_theme(colors.emerald.400)] transform transition-all duration-300 ${
+              className={`w-6 h-6 bg-white rounded-full transform transition-all duration-300 ${
                 darkMode ? "translate-x-8" : "translate-x-0"
               }`}
             ></span>
@@ -61,7 +61,9 @@ function App() {
             darkMode ? "bg-sky-500 text-white" : "bg-sky-400 text-black"
           } transition-all duration-300`}
         >
-          <h2 className=" pt-30 text-4xl font-bold">👋 Hi, There</h2>
+          <h2 className="pt-30 text-4xl font-bold">
+            <span className="waving-hand">👋</span> Hi, There
+          </h2>
           <p className="mt-10 ml-20 mr-20  text-lg">
             I am Jatin Lakhorkar, a passionate developer 💻 who loves to build
             impactful projects 🌍 to help society. Language is not a barrier for
@@ -128,17 +130,35 @@ function App() {
         <section id="projects" className=" container mx-auto px-6 mt-3">
           <h2 className="text-3xl font-semibold text-center">Projects</h2>
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="p-4 border rounded-lg shadow-[0px_0px_10px_theme(colors.emerald.400)]">
+            <div
+              className={`p-4 border rounded-lg ${
+                darkMode
+                  ? "shadow-[0px_0px_10px_theme(colors.sky.600)]"
+                  : "shadow-[0px_0px_10px_theme(colors.sky.400)]"
+              }`}
+            >
               <h3 className="text-xl font-bold">Weather App</h3>
               <p>
                 A simple weather app using Java, REST API, and weather APIs.
               </p>
             </div>
-            <div className="p-4 border rounded-lg shadow-[0px_0px_10px_theme(colors.emerald.400)] ">
+            <div
+              className={`p-4 border rounded-lg ${
+                darkMode
+                  ? "shadow-[0px_0px_10px_theme(colors.sky.600)]"
+                  : "shadow-[0px_0px_10px_theme(colors.sky.400)]"
+              }`}
+            >
               <h3 className="text-xl font-bold">Movie Recommendation App</h3>
               <p>Built with MERN stack using the TMDB API.</p>
             </div>
-            <div className="p-4 border rounded-lg shadow-[0px_0px_10px_theme(colors.emerald.400)]">
+            <div
+              className={`p-4 border rounded-lg ${
+                darkMode
+                  ? "shadow-[0px_0px_10px_theme(colors.sky.600)]"
+                  : "shadow-[0px_0px_10px_theme(colors.sky.400)]"
+              }`}
+            >
               <h3 className="text-xl font-bold">Calculator</h3>
               <p>A simple Calculator app built using HTML CSS and JS</p>
             </div>

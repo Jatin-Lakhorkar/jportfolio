@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+
+.waving-hand {
+    display: inline-block;
+    font-size: 2rem;
+    animation: wave-animation 1.5s infinite;
+    transform-origin: 70% 70%;
+    animation-duration: 1.5s;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
