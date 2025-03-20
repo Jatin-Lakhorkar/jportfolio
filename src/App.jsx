@@ -76,49 +76,81 @@ function App() {
         <section id="about" className=" container mx-auto px-6 mt-10">
           <h2 className="text-3xl font-semibold text-center">About Me</h2>
           <div className="gap-3 mt-6 grid-cols-3 flex justify-center items-center flex-wrap">
-            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
+            <div
+              className={`w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center ${
+                darkMode ? "bg-white" : "bg-sky-950"
+              }`}
+            >
               <img
                 src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
                 alt="Java"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
+            <div
+              className={`w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center ${
+                darkMode ? "bg-white" : "bg-sky-950"
+              }`}
+            >
               <img
                 src="https://img.icons8.com/color/48/000000/html-5--v1.png"
                 alt="HTML"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
+            <div
+              className={`w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center ${
+                darkMode ? "bg-white" : "bg-sky-950"
+              }`}
+            >
               <img
                 src="https://img.icons8.com/color/48/000000/css3.png"
                 alt="CSS"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
+            <div
+              className={`w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center ${
+                darkMode ? "bg-white" : "bg-sky-950"
+              }`}
+            >
               <img
                 src="https://img.icons8.com/color/48/000000/javascript--v1.png"
                 alt="JavaScript"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
+            <div
+              className={`w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center ${
+                darkMode ? "bg-white" : "bg-sky-950"
+              }`}
+            >
               <img
                 src="https://img.icons8.com/color/48/000000/mongodb.png"
                 alt="MongoDB"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
+            <div
+              className={`w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center ${
+                darkMode ? "bg-white" : "bg-sky-950"
+              }`}
+            >
               <img
                 src="https://img.icons8.com/?size=100&id=SDVmtZ6VBGXt&format=png&color=000000"
                 alt="Express"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
+            <div
+              className={`w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center ${
+                darkMode ? "bg-white" : "bg-sky-950"
+              }`}
+            >
               <img
                 src="https://img.icons8.com/color/48/000000/react-native.png"
                 alt="React"
               />
             </div>
-            <div className="w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center">
+            <div
+              className={`w-20 h-25 border rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center ${
+                darkMode ? "bg-white" : "bg-sky-950"
+              }`}
+            >
               <img
                 src="https://img.icons8.com/color/48/000000/nodejs.png"
                 alt="Node"
@@ -133,7 +165,7 @@ function App() {
             <div
               className={`p-4 border rounded-lg ${
                 darkMode
-                  ? "shadow-[0px_0px_10px_theme(colors.sky.600)]"
+                  ? "shadow-[0px_0px_10px_theme(colors.sky.600)] bg-sky-950"
                   : "shadow-[0px_0px_10px_theme(colors.sky.400)]"
               }`}
             >
@@ -145,7 +177,7 @@ function App() {
             <div
               className={`p-4 border rounded-lg ${
                 darkMode
-                  ? "shadow-[0px_0px_10px_theme(colors.sky.600)]"
+                  ? "shadow-[0px_0px_10px_theme(colors.sky.600)] bg-sky-950"
                   : "shadow-[0px_0px_10px_theme(colors.sky.400)]"
               }`}
             >
@@ -155,7 +187,7 @@ function App() {
             <div
               className={`p-4 border rounded-lg ${
                 darkMode
-                  ? "shadow-[0px_0px_10px_theme(colors.sky.600)]"
+                  ? "shadow-[0px_0px_10px_theme(colors.sky.600)] bg-sky-950"
                   : "shadow-[0px_0px_10px_theme(colors.sky.400)]"
               }`}
             >
