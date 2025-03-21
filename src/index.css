@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 
-.waving-hand {
+.animate-wave {
     display: inline-block;
-    font-size: 2rem;
-    animation: wave-animation 1.5s infinite;
+    font-size: 3rem;
+    animation: wave 1.5s infinite;
     transform-origin: 70% 70%;
     animation-duration: 1.5s;
 }
 
-@keyframes wave-animation {
+@keyframes wave {
     0% {
         transform: rotate(0deg);
     }
@@ -32,7 +32,7 @@
 }
 
 .badge {
-    @apply w-15 h-20 border rounded-full shadow-[0px_0px_10px] shadow-sky-400 flex items-center justify-center;
+    @apply transition-transform duration-300 transform hover:scale-110 w-15 h-20 border border-sky-600 rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center;
 }
 
 .project {
