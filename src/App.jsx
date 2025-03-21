@@ -9,7 +9,11 @@ const getShadowClass = (darkMode) =>
 
 // Reusable Badge Component
 const Badge = ({ src, alt, darkMode }) => (
-  <div className={`badge ${darkMode ? "bg-white" : "bg-sky-950"}`}>
+  <div
+    className={`badge ${
+      darkMode ? "bg-sky-950" : " border-sky-600"
+    } p-2 rounded-md`}
+  >
     <img src={src} alt={alt} />
   </div>
 );
@@ -27,7 +31,7 @@ function App() {
 
   return (
     <div
-      className={`${
+      className={` font-mono ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       } transition-all duration-300`}
     >
@@ -70,10 +74,15 @@ function App() {
           darkMode ? "bg-sky-500 text-white" : "bg-sky-400 text-black"
         } transition-all duration-300`}
       >
-        <h2 className="pt-1 text-4xl font-bold">👋 Hi, There</h2>
-        <p className="p-7 mx-7 text-lg font-[Verdana]">
+        <h2 className="pt-1 text-4xl font-bold">
+          <span className="waving-hand">👋</span>Hi,There
+        </h2>
+        <p className="p-7 mx-7 text-lg">
           I am Jatin Lakhorkar, a passionate developer 💻 who loves to build
-          impactful projects 🌍.
+          impactful projects 🌍 to help society. Language is not a barrier for
+          me 🚀, I can code in any language after learning 📚. I am a quick
+          learner ⚡ and problem solver 🧩. Loves to work in a team 🤝 and learn
+          from others 🔍.
         </p>
       </section>
 
@@ -147,7 +156,7 @@ function App() {
 
       {/* Resume Section */}
       <section id="resume" className="container mx-auto px-6 mt-10 text-center">
-        <h2 className="text-3xl font-semibold">Resume</h2>
+        <h2 className="text-3xl font-semibold">Résumé</h2>
         <p className="mt-4">More details coming soon.</p>
       </section>
 
