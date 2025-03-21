@@ -36,5 +36,5 @@
 }
 
 .project {
-    @apply p-4 border rounded-lg border-sky-600;
+    @apply transition-transform duration-300 transform p-4 border hover:scale-110 rounded-lg border-sky-600;
 }
