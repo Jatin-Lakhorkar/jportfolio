@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 .animate-wave {
     display: inline-block;
     font-size: 3rem;
@@ -32,9 +31,9 @@
 }
 
 .badge {
-    @apply transition-transform duration-300 transform hover:scale-110 w-15 h-20 border border-sky-600 rounded-full shadow-[0px_0px_10px_theme(colors.sky.400)] flex items-center justify-center;
+    @apply hover:scale-110 w-15 h-20 border border-sky-600 rounded-full flex items-center justify-center;
 }
 
 .project {
-    @apply transition-transform duration-300 transform p-4 border hover:scale-110 rounded-lg border-sky-600;
+    @apply p-4 border hover:scale-110 rounded-lg border-sky-600;
 }
