@@ -35,7 +35,7 @@
 }
 
 .project {
-    @apply shadow-lg overflow-hidden relative transition-all duration-500 transform hover:scale-105 p-4 border rounded-lg border-transparent;
+    @apply overflow-hidden relative transition-all duration-500 transform hover:scale-105 p-4 border rounded-lg border-transparent;
 }
 
 .light {

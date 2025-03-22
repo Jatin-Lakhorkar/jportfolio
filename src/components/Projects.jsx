@@ -1,19 +1,20 @@
 import getShadowClass from "./getShadowClass";
+
 // Reusable Project Card Component
 const ProjectCard = ({ title, description, image, darkMode }) => (
     <div className={` project ${getShadowClass(darkMode)}`}>
 
-        <div className="absolute inset-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
+        <div className="relative group">
             <img
                 src={image}
                 alt={title}
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
             />
         </div>
 
         {/* Content */}
-        <div className="relative z-10">
-            <h3 className="text-2xl font-semibold">{title}</h3>
+        <div className="relative">
+            <h3 className="text-xl font-semibold">{title}</h3>
             <p className="mt-2">{description}</p>
         </div>
     </div>
@@ -30,7 +31,7 @@ const Project = ({ darkMode, setDarkMode }) => (
                     title: "Weather App",
                     description:
                         "A simple weather app using Java, REST API, and weather APIs.",
-                    image: "https://source.unsplash.com/800x600/?weather",
+                    image: "../assets/img.jpg",
                 },
                 {
                     title: "Movie Recommendation App",
