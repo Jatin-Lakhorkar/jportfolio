@@ -9,7 +9,7 @@ const Badge = ({ src, alt, darkMode }) => (
 );
 
 const About = ({ darkMode, setDarkMode }) => (
-    <section id="about" className="container mx-auto px-6 py-16">
+    <section id="about" className="min-h-screen container mx-auto px-6 py-16">
         <h2 className="text-4xl font-bold text-center text-sky-500">
             About Me
         </h2>

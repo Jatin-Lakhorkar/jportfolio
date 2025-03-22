@@ -1,6 +1,7 @@
-const Footer = () => (
+import getShadowClass from "./getShadowClass";
+const Footer = ({ darkMode }) => (
 
-    <footer className="flex justify-between items-center py-3 bg-gradient-to-l from-sky-800 to-gray-900 text-white px-8">
+    <footer className={`flex justify-between items-center py-3 px-8 ${getShadowClass(darkMode)}`}>
         <div>Made with ❤️ by Jatin</div>
         <div>&copy; 2025 All Rights Reserved.</div>
         <div className="flex space-x-4">

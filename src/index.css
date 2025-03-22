@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-.animate-wave {
+.animate-wave:hover {
     display: inline-block;
     font-size: 3rem;
-    animation: wave 1.5s infinite;
+    animation: wave 2s infinite;
     transform-origin: 70% 70%;
     animation-duration: 1.5s;
 }
@@ -31,9 +31,17 @@
 }
 
 .badge {
-    @apply hover:scale-110 w-15 h-20 border border-sky-600 rounded-full flex items-center justify-center;
+    @apply hover:scale-110 w-15 h-20 border border-transparent rounded-full flex items-center justify-center;
 }
 
 .project {
-    @apply p-4 border hover:scale-110 rounded-lg border-sky-600;
+    @apply shadow-lg overflow-hidden relative transition-all duration-500 transform hover:scale-105 p-4 border rounded-lg border-transparent;
+}
+
+.light {
+    @apply bg-gradient-to-r from-white to-sky-300;
+}
+
+.dark {
+    @apply bg-gradient-to-l from-sky-600 to-green-600;
 }

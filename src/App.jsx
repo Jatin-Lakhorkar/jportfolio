@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div
-      className={` font-mono antialiased ${darkMode ? "bg-gray-900 text-white" : "bg-gray-50 text-gray-900"
+      className={` font-mono antialiased bg-gradient-to-r ${darkMode ? "from-stone-500 to-emerald-600 text-white" : "from-sky-400 to-white text-gray-900"
         } transition-all duration-300`}
     >
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
@@ -20,7 +20,7 @@ function App() {
       <About darkMode={darkMode} />
       <Projects darkMode={darkMode} />
       <Resume darkMode={darkMode} />
-      <Footer />
+      <Footer darkMode={darkMode} />
     </div>
   );
 }
