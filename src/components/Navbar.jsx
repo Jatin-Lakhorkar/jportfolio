@@ -9,11 +9,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
-            className="relative w-14 h-8 flex items-center bg-slate-600/50 rounded-full p-1 cursor-pointer transition-colors duration-300"
+            className=" focus:ring-2 ring-blue-500 relative w-14 h-8 flex items-center bg-slate-600/50 rounded-full p-1 cursor-pointer transition-colors duration-300"
             onClick={() => setDarkMode((prev) => !prev)}
           >
             <span
-              className={`w-6 h-6 rounded-full shadow-md transform transition-all duration-500 ${darkMode
+              className={` w-6 h-6 rounded-full shadow-md transform transition-all duration-500 ${darkMode
                 ? "translate-x-6 bg-gradient-to-l from-sky-600 to-blue-800"
                 : "translate-x-0 bg-gradient-to-r from-yellow-400 to-orange-500"
                 }`}

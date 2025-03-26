@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Project from "./components/Projects";
-import { BounceLoader } from "react-spinners";
+import { PropagateLoader } from "react-spinners";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -28,7 +28,7 @@ function App() {
   return (
     <> {loading ? (
       <div className="flex justify-center items-center h-screen">
-        <BounceLoader color="#13c5ed" size={50} />
+        <PropagateLoader color="#13c5ed" size={30} />
       </div>
     ) : (
       <div
