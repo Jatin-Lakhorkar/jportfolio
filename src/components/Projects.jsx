@@ -34,7 +34,7 @@ const Project = ({ darkMode, setDarkMode }) => (
                     image: "../assets/img.jpg",
                 },
                 {
-                    title: "Movie Recommendation App",
+                    title: "Music Recommendation App",
                     description: "Built with MERN stack using the TMDB API.",
                 },
                 {

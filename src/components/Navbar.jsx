@@ -3,7 +3,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="fixed w-full mx-auto z-10 backdrop-blur-lg bg-slate-600/20 justify-between items-center">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#home" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="../assets/lj.png" className="h-8" alt="LJ"></img>
         </a>
